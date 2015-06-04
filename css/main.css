@@ -1192,4 +1192,6 @@ hr.lineSeparator {
 h2.subtitleContactForm{
 	font-size:22px;
 }
-	
+.formatContactButton{
+	background-color: #288AFF !important; 
+}
