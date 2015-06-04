@@ -1176,6 +1176,20 @@ border-color: #1189d2;
 @media (min-width: 768px){
 .navbar-nav {
   float: right;
-  margin: 0;
+  margin: 0;KS
 }
 }
+
+
+/*ALAIN*/
+
+hr.lineSeparator { 
+  background-color: #3E7EC7; 
+  height: 1px;
+  width: 25%; 
+}	
+
+h2.subtitleContactForm{
+	font-size:22px;
+}
+	
