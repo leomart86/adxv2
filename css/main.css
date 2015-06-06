@@ -1170,8 +1170,11 @@ border-color: #1189d2;
   .navbar-nav .open .dropdown-menu .dropdown-header{
 	color:#fff;
   }
+  
+  .flex-video iframe, .flex-video object, .flex-video embed {
+ height:100%;	  
 }
-
+}
 
 @media (min-width: 768px){
 .navbar-nav {
@@ -1181,12 +1184,12 @@ border-color: #1189d2;
 }
 
 
-/*ALAIN*/
+/*####ALAIN####*/
 
 hr.lineSeparator { 
   background-color: #3E7EC7; 
   height: 1px;
-  width: 25%; 
+  width: 5%; 
 }	
 
 h2.subtitleContactForm{
@@ -1194,4 +1197,102 @@ h2.subtitleContactForm{
 }
 .formatContactButton{
 	background-color: #288AFF !important; 
+}
+
+	/*End contac Section*/
+	
+.imgRetos, .imgRetosConoce {
+	height: 300px; /*Cambiar por auto*/
+	background-color: #000;
+	width: 100%;
+}
+
+.imgRetosConoce {
+	height: 100px; /*Cambiar por auto*/
+}
+
+.imgRetosInfo, .imgRetosInfoConoce{
+	background-color: #EBEBEB;
+	height: auto;
+	margin: 0 1%;
+	text-align: center;
+}
+.imgRetosInfoConoce{
+	margin: 0 3px;
+	padding: 5px;	
+}
+
+.pFormatRetos{ 
+	text-align: justify;	
+}
+
+body > section#titleRetos, section#titleConoce, section#contentRetos, section#contentRetosConoce, section#titleRetosDetalle, section#contentRetosDetalle, section#titleContacto {
+	padding: 15px 0;
+}
+
+h5.sectionConoceTitleSubtheme{
+	text-align: left;
+	margin: 3px 0;
+}
+
+
+.moreConoce{
+	height: auto;
+	width: 185px;
+	background-color: #EBEBEB;
+	float: left;
+	margin: 3px;
+}
+
+@media (max-width: 520px){
+	.moreConoce{
+		float: none;
+		margin: 5px auto;
+	}	
+} 
+
+	/*End retos Section*/ 
+	
+	.flex-video {
+position: relative;
+padding-top: 25px;
+padding-bottom: 67.5%;
+height: 0;
+margin-bottom: 16px;
+overflow: hidden;
+}
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 50%;
+}
+
+@media (max-width: 768px) {
+  
+	.flex-video iframe, .flex-video object, .flex-video embed {
+		 height:60%;
+		 margin: 15px 0 0;	  
+	}
+}
+.btnMecanica, .btnParticipa {
+   border-top: 1px solid #96d1f8;
+   background: #27a9e1;
+   padding: 8px 16px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: white;
+   font-size: 17px;
+   text-decoration: none;
+   vertical-align: middle;
+   margin: 10px;
+   }
+
+.btnParticipa {
+	background: #ED2A7B;
 }
