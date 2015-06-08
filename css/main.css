@@ -1186,14 +1186,23 @@ border-color: #1189d2;
 
 /*####ALAIN####*/
 
-hr.lineSeparator { 
+hr.lineSeparator, hr.lineSeparator2  { 
   background-color: #3E7EC7; 
   height: 1px;
   width: 5%; 
+  border: none;
 }	
 
-h2.subtitleContactForm{
+hr.lineSeparator2{
+  background-color: #7d7d7d; 
+  width: 100%;
+}
+
+h2.subtitleContactForm, h2.subtitleFichaForm{
 	font-size:22px;
+}
+h2.subtitleFichaForm{
+  color: #101010;
 }
 .formatContactButton{
 	background-color: #288AFF !important; 
@@ -1201,16 +1210,18 @@ h2.subtitleContactForm{
 
 	/*End contac Section*/
 	
-.imgRetos, .imgRetosConoce {
+.imgRetos, .imgRetosConoce, .imgRetosConoceLive {
 	height: 300px; /*Cambiar por auto*/
 	background-color: #000;
 	width: 100%;
 }
 
-.imgRetosConoce {
+.imgRetosConoce, .imgRetosConoceLive {
 	height: 100px; /*Cambiar por auto*/
 }
-
+.imgRetosConoceLive {
+  width: 80%;
+}
 .imgRetosInfo, .imgRetosInfoConoce{
 	background-color: #EBEBEB;
 	height: auto;
@@ -1226,8 +1237,17 @@ h2.subtitleContactForm{
 	text-align: justify;	
 }
 
-body > section#titleRetos, section#titleConoce, section#contentRetos, section#contentRetosConoce, section#titleRetosDetalle, section#contentRetosDetalle, section#titleContacto {
-	padding: 15px 0;
+body > section#contact-page, section#ficha-page, section#titleRetos, section#titleConoce, section#contentRetos, section#contentRetosConoce, section#titleRetosDetalle, section#contentRetosDetalle, section#titleContacto {
+	padding: 0;
+}
+
+body > section#videoStreamingFicha, section#titleStreamingFicha, section#ponentStreaminFicha{
+  padding: 3px 0 0;  
+  margin-bottom: 0;
+}
+
+body > section#titleStreamingFicha{
+  padding: 0;  
 }
 
 h5.sectionConoceTitleSubtheme{
@@ -1236,19 +1256,23 @@ h5.sectionConoceTitleSubtheme{
 }
 
 
-.moreConoce{
+.moreConoce, .moreLive{
 	height: auto;
 	width: 185px;
-	background-color: #EBEBEB;
+	background-color: #EBEBEB; /*Quitar este fondo*/
 	float: left;
 	margin: 3px;
+}
+
+.moreLive{
+  width: 150px;
 }
 
 @media (max-width: 520px){
 	.moreConoce{
 		float: none;
 		margin: 5px auto;
-	}	
+	}
 } 
 
 	/*End retos Section*/ 
@@ -1296,3 +1320,75 @@ height: 50%;
 .btnParticipa {
 	background: #ED2A7B;
 }
+
+p.namePonentFicha{
+  color: #f22121;
+}
+
+.socialNetworksFichaContenedor{
+  text-align: right;
+  color:  #006DB2;
+}
+.otrasTrasmisionesContenedor{
+  text-align: left;
+  color: #005FA3;
+}
+.socialNetworksFicha{
+  margin-top: 25px;
+}
+.otrasTrasmisiones{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.styleSectionImgFicha{
+  text-align: right;
+}
+.styleSectionImgLive{
+  text-align: left;
+}
+
+.styleSectionTxtFicha{
+  text-align: justify;
+}
+
+@media (max-width: 520px){
+  .styleSectionImgFicha{
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.fichaImgExperiencePonent, .fichaTxtExperiencePonent{
+  float: left;
+  width: 25%;
+  height: auto;
+  text-align: justify;
+  margin: 0 auto 20px;
+}
+.fichaTxtExperiencePonent{
+  width: 75%;
+  font-size: 12px;
+}
+.titleStyleSubseccionFicha{
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
